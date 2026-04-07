@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Databases (Opcional: Si prefieres no subir la DB binaria)
+# sql/*.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Power BI
+*.pbix.temp
+~*.pbix
