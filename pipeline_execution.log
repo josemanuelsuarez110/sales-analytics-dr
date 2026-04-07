@@ -1,0 +1,8 @@
+2026-04-07 11:31:40,519 | INFO | === INICIO DE PIPELINE EMPRESARIAL ===
+2026-04-07 11:31:40,519 | INFO | Iniciando ingesta de fuente: API_Dominicana (LATAM)
+2026-04-07 11:31:40,519 | INFO | Fuente API_Dominicana: Procesadas 50 filas en 0.00s
+2026-04-07 11:31:40,519 | INFO | Iniciando ingesta de fuente: ERP_España (EMEA)
+2026-04-07 11:31:40,523 | INFO | Fuente ERP_España: Procesadas 50 filas en 0.00s
+2026-04-07 11:31:40,523 | INFO | Iniciando UPSERT en Capa BRONZE (brz_sales)...
+2026-04-07 11:31:40,534 | INFO | SUCCESS: Upsert en Capa BRONZE completado.
+2026-04-07 11:31:40,534 | INFO | === PIPELINE FINALIZADO CON ÉXITO ===
