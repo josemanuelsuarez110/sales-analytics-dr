@@ -4,10 +4,18 @@ Proyecto de **Arquitectura de Datos y Analítica Avanzada** diseñado para la to
 
 ## 🏗️ Arquitectura del Sistema
 Este proyecto implementa una infraestructura de datos de nivel empresarial (**Senior Level**):
-- **Capa ETL (Python)**: Generación de **2,500 registros** sintéticos localizados en la República Dominicana, limpieza automatizada y carga eficiente.
-- **Modelado DWH (Star Schema)**: Diseño optimizado con claves primarias/foráneas e índices para reducción de latencia.
+
+### 🔄 Flujo de Datos Automatizado
+```text
+  [ FUENTES ]        [ ORQUESTACIÓN ]       [ DATA WAREHOUSE ]      [ REPORTING ]
+  CSV / Excel  ──▶   Python (ETL)    ──▶   SQL (Staging/DW)   ──▶   Power BI 
+  APIs / Logs  ──▶   Data Quality    ──▶   Incremental Load   ──▶   Gateways / Alertas
+```
+
+- **Capa ETL (Python Automation)**: Orquestador dinámico con **Logging profesional** y validación de calidad de datos.
+- **Modelado DWH (Star Schema)**: Diseño optimizado con **Carga Incremental** e integridad referencial.
 - **Analítica Avanzada**: Motor de detección de **anomalías (Outliers)** mediante **Z-Score** estadístico.
-- **Consultas Optimistas**: Uso de **CTEs** y **Window Functions** para análisis de **Pareto (80/20)** y Rankings mensuales.
+- **Consultas Optimistas**: Uso de **CTEs** y **Window Functions** para análisis estratégico.
 
 ## 🚀 Tecnologías Senior
 - **Python**: Pandas, NumPy, SQLAlchemy (Pipeline & Anomaly Detection).
