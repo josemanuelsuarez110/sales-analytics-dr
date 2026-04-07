@@ -27,6 +27,13 @@ Este proyecto implementa una infraestructura de datos de nivel empresarial (**Se
 ├── etl/
 │   ├── etl_sales.py          # Extracción, Limpieza y Carga (ETL)
 │   └── advanced_analytics.py   # Detección de anomalías y Series Temporales
+├── people_analytics/         # NUEVO: Análisis de Capital Humano
+│   ├── etl/
+│   │   └── flight_risk_analysis.py # Predicción de Riesgo de Fuga
+│   ├── sql/
+│   │   └── hr_schema_setup.sql     # DWH de RRHH (Anonimizado)
+│   └── powerbi/
+│       └── hr_bi_specs.md          # Métricas de Talento (9-Box Grid)
 ├── sql/
 │   ├── star_schema_setup.sql   # DWH: Esquema en Estrella (PK/FK, Indices)
 │   ├── optimized_queries.sql   # Analítica SQL (CTEs, Window Functions)
@@ -42,5 +49,10 @@ Este proyecto implementa una infraestructura de datos de nivel empresarial (**Se
 - **Moving Avg 3M**: Suavizado de tendencias temporales.
 - **QoQ Growth**: Análisis dinámico intertrimestral.
 
+## 📑 Ética de Datos y Privacidad (People Analytics)
+Como **Especialista en People Analytics**, la integridad y privacidad son pilares innegociables:
+- **Anonimización**: Se han eliminado identificadores personales (nombres, DNIs) sustituyéndolos por IDs únicos para el análisis masivo.
+- **Cumplimiento**: El diseño de este ecosistema sigue principios de **GDPR** y leyes locales de protección de datos, asegurando que el análisis de desempeño sea justo, transparente y basado únicamente en méritos objetivos.
+
 ---
-*Desarrollado con un enfoque en **optimización de procesos**, **latencia cero** y **escalabilidad analítica**.*
+*Desarrollado con un enfoque en **optimización de procesos**, **ética de datos** y **escalabilidad estratégica**.*
