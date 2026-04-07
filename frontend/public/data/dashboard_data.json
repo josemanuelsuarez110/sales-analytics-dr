@@ -1,0 +1,68 @@
+{
+    "last_updated": "2026-04-07 11:57:04.388082",
+    "sales": {
+        "total_revenue_usd": 1250000,
+        "revenue_growth_wow": 12.5,
+        "top_region": "LATAM",
+        "sales_history": [
+            {
+                "month": "Jan",
+                "amount": 150000
+            },
+            {
+                "month": "Feb",
+                "amount": 220000
+            },
+            {
+                "month": "Mar",
+                "amount": 280000
+            },
+            {
+                "month": "Apr",
+                "amount": 240000
+            },
+            {
+                "month": "May",
+                "amount": 360000
+            }
+        ]
+    },
+    "talent": {
+        "headcount": 250,
+        "turnover_rate": 4.2,
+        "high_potential_pct": 18,
+        "talent_grid": [
+            {
+                "segment": "Top Talent",
+                "count": 45
+            },
+            {
+                "segment": "Solid Prof",
+                "count": 120
+            },
+            {
+                "segment": "Underperf",
+                "count": 15
+            },
+            {
+                "segment": "Enigma",
+                "count": 70
+            }
+        ]
+    },
+    "social": {
+        "internet_gap_years": 4.1,
+        "social_correlation": 0.82,
+        "impact_recommendation": "Invertir 1% en TICs rurales incrementa 5% escolaridad.",
+        "education_by_region": [
+            {
+                "region": "Urban",
+                "years": 12.4
+            },
+            {
+                "region": "Rural",
+                "years": 8.3
+            }
+        ]
+    }
+}

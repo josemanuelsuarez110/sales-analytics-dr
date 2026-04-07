@@ -1,56 +1,41 @@
-# 📊 Senior Sales Analytics: República Dominicana (DWH & BI)
+# 🚀 Master Data Solutions Platform: Full-Stack Architect
 
 Proyecto de **Arquitectura de Datos y Analítica Avanzada** diseñado para la toma de decisiones estratégicas, integrando un Data Warehouse (DWH) robusto, detección de anomalías y visualización predictiva.
 
-## 🏗️ Arquitectura del Sistema
-Este proyecto implementa una infraestructura de datos de nivel empresarial (**Lead Architect Level**):
+## 🏗️ Arquitectura del Sistema (Full-Stack)
+Este ecosistema integra todo el ciclo de vida del dato bajo una infraestructura de **Arquitecto de Soluciones**:
 
-### 🔄 System Architecture (Data Pipeline)
+### 🔄 Integrated Data Journey
 ```text
-  [ SOURCES ]         [ PYTHON ETL ]         [ SQL DWH ]          [ POWER BI ]
-  APIs Region A ──▶   Ingesta (Upsert)  ──▶   Capa Bronze  ──▶   Capa Semántica
-  ERPs Region B ──▶   Schema Validator  ──▶   Capa Silver  ──▶   RLS / DAX WoW
-  CSV / Excels  ──▶   Perform. Logging  ──▶   Capa Gold    ──▶   Inc. Refresh
+  [ SOURCES ]       [ PIPELINE / ETL ]       [ DWH (Medallion) ]      [ PRESENTATION ]
+  APIs Global  ──▶   Master Orchestrator ──▶   Layer Bronze    ──▶   Next.js Dash
+  HRIS Talent  ──▶   Data Quality (PD)   ──▶   Layer Silver    ──▶   Recharts / UX
+  Open Data RD ──▶   Predictive Models   ──▶   Layer Gold      ──▶   Vercel Cloud
 ```
 
-- **Pipeline Architect (Python)**: Orquestador modular con lógica de **Upsert inteligente** y registro de latencia por fuente.
-- **Medallion Architecture (SQL)**: Estructura Bronze, Silver y Gold para consolidación multimoneda (DOP, USD, EUR, MXN, CAD).
-- **Analítica Predictiva**: Motor de detección de **anomalías (Outliers)** mediante **Z-Score** estadístico.
-- **Consultas Optimistas**: Uso de **CTEs**, **Window Functions** e índices de alto rendimiento.
+- **Master Orchestration (Python)**: Sistema centralizado con lógica de **Upsert**, manejo de errores y generación de JSON para el Frontend.
+- **Unified Medallion (SQL)**: Consolidación de Ventas, People Analytics e Impacto Social en capas de refinamiento.
+- **Analytics Dashboard (Next.js)**: Capa de visualización premium desplegada en **Vercel** con métricas en tiempo real.
+- **Storytelling Proactivo**: Enfoque en narrativa de impacto social y ética de datos.
 
 ## 🚀 Tecnologías Senior
 - **Python**: Pandas, NumPy, SQLAlchemy (Pipeline & Anomaly Detection).
 - **Escalabilidad SQL**: Estructura de tablas normalizadas y lógica de agregación avanzada.
 - **BI Strategy**: Inteligencia de tiempo (YTD, Moving Averages 3M) y UX de alto impacto.
 
-## 📁 Estructura del Repositorio
-```bash
-├── etl/
-│   ├── etl_sales.py          # Extracción, Limpieza y Carga (ETL)
-│   └── advanced_analytics.py   # Detección de anomalías y Series Temporales
-├── social_impact/            # NUEVO: Análisis de Impacto Social
-│   ├── etl/
-│   │   └── social_data_ingestion.py  # Ingesta Bank/ONE RD (API/CSV)
-│   ├── sql/
-│   │   └── social_analysis_queries.sql # Consolidación de Brechas
-│   └── powerbi/
-│       └── storytelling_specs.md     # Narrativa Visual RD
+├── frontend/                 # NUEVO: Dashboard de Visualización (Next.js)
+│   ├── src/app/              # UI Components & Page Layout
+│   └── public/data/          # Fuente de la Verdad (Master JSON)
+├── master_solution/          # Arquitectura Integrada y Orquestación
+│   ├── scripts/              # MASTER_ORCHESTRATOR.py & Unified SQL
+│   └── docs/                 # Diccionario de KPIs Maestro
+├── etl/                      # Módulos de Ventas y Analítica
 ├── people_analytics/         # Análisis de Capital Humano
-│   ├── etl/
-│   │   └── flight_risk_analysis.py # Predicción de Riesgo de Fuga
-│   ├── sql/
-│   │   └── hr_schema_setup.sql     # DWH de RRHH (Anonimizado)
-│   └── powerbi/
-│       └── hr_bi_specs.md          # Métricas de Talento (9-Box Grid)
-├── sql/
-│   ├── star_schema_setup.sql   # DWH: Esquema en Estrella (PK/FK, Indices)
-│   ├── optimized_queries.sql   # Analítica SQL (CTEs, Window Functions)
-│   └── sales_data.db           # Almacén de Datos (SQLite DWH)
-├── powerbi/
-│   └── powerbi_specs.md      # Estrategia DAX & UX Senior
-├── PROMPT.md                 # Documentación de Arquitectura e IA
-└── README.md                 # Visión General Profesional
-```
+├── social_impact/            # Análisis de Impacto Social
+├── pipeline/                 # Ingeniería de Pipelines
+├── sql/                      # DWH Schemas & Optimized Queries
+├── vercel.json               # Configuración de Despliegue Cloud
+└── README.md                 # Visión Master del Proyecto
 
 ## 📊 Medidas DAX Críticas
 - **Sales YTD**: `TOTALYTD([Total Sales], 'Dim_Calendario'[Date])`
